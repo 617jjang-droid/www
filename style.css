@@ -1,0 +1,46 @@
+/* 기본 스타일 */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#quiz {
+  cursor: pointer;
+  border: 2px solid #333;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 60%; /* 기본 화면에서는 적당한 크기 */
+}
+
+#word {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#meaning {
+  font-size: 1.5em;
+  color: #555;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 600px) {
+  body {
+    margin-top: 20px;
+  }
+
+  #quiz {
+    width: 90%;       /* 화면 거의 꽉 차게 */
+    padding: 40px;    /* 터치 영역 넓게 */
+  }
+
+  #word {
+    font-size: 2.5em; /* 단어 크게 */
+  }
+
+  #meaning {
+    font-size: 2em;   /* 뜻도 크게 */
+  }
+}
