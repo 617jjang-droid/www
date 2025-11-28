@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>단어장 퀴즈</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📚 단어장 퀴즈</h1>
+
+  <section id="manage">
+    <h2>Day 관리</h2>
+    <input type="text" id="newDayInput" placeholder="새 day 이름 (예: day4)">
+    <button id="addDayBtn">Day 추가</button>
+    <button id="removeDayBtn">Day 삭제</button>
+    <br><br>
+    <label for="daySelect">Day 선택:</label>
+    <select id="daySelect"></select>
+  </section>
+
+  <section id="addWord">
+    <h2>단어 추가</h2>
+    <input type="text" id="wordInput" placeholder="단어 입력">
+    <input type="text" id="meaningInput" placeholder="뜻 입력">
+    <button id="addBtn">추가</button>
+  </section>
+
+  <section id="quizSection">
+    <h2>퀴즈</h2>
+    <button id="startQuizBtn">퀴즈 시작</button>
+    <div id="quiz">
+      <div id="word"></div>
+      <div id="meaning" style="display:none;"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
